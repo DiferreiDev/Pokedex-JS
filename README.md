@@ -4,7 +4,7 @@
     <a href="CHANGELOG.md">
         <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Versión">
     </a>
-    <a href="">
+    <a href="https://github.com/DiferreiDev/Pokedex-JS">
         <img src="https://img.shields.io/badge/estado-en_desarrollo-orange.svg" alt="Versión">
     </a>
 
@@ -12,6 +12,11 @@
 
 <p align="center">  
 Esta es un pokedex simple desarrolada en HTML, JS y CSS. Funciona a partir de un json que generas a traves de la PokeApi y muestra todos los pokemon y muestra sus diferentes formas.
+</p>
+<p align="center">
+    <a href="https://diferreidev.github.io/Pokedex-JS/">
+        Live Demo
+    </a>
 </p>
 
 ![Pokedex-Preview](assets/img/Preview.png)
