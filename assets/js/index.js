@@ -171,7 +171,9 @@ class JSONLoader {
     for (let i = 0; i < pokemonForm.types.length; i++) {
       typeElements.push(document.createElement("img"));
       typeElements[i].src =
-        "./assets/img/types/Tipo_" + pokemonForm.types[i] + ".png";
+        "./assets/img/types/Tipo_" +
+        pokemonForm.types[i].toLowerCase() +
+        ".png";
       divContainerElement.appendChild(typeElements[i]);
     }
     if (pokemonForm.types.length > 1) {
