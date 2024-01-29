@@ -20,8 +20,8 @@ Esta es un pokedex simple desarrolada en HTML, JS y CSS. Funciona a partir de un
 
 Necesitas levantar un servidor, puedes hacerlo localmente con python:
 
-> [!INFO]
-> You need to install Python 3
+> [!NOTE]
+> Necesitas tener instalado Python 3
 
 ```bash
 python -m http.server [PORT]
