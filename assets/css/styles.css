@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+/* General settings */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #21222c;
+  display: flex;
+  border-bottom: 3px solid #41424b;
+  height: 100px;
+  padding: 15px 0 0 20px;
+}
+
+main {
+  background-color: #1356aa;
+  border-top: 5px solid #ffff00;
+  border-bottom: 5px solid #ffff00;
+  display: flex;
+  height: calc(100vh - 140px);
+}
+
+footer {
+  border-top: 3px solid #41424b;
+  background: #21222c;
+  height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Header Elements
+--------------------------------------------------------------*/
+/* Header Containers */
+.header-l-container,
+.header-r-container {
+  display: flex;
+}
+
+/* Left Header Container */
+.header-l-container {
+  flex: 8;
+}
+
+/* Right Header Container */
+.header-r-container {
+  flex: 4;
+}
+
+/* Region Filter Container */
+.pokedex-title {
+  width: 290px;
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Region Filter Icon */
+.pokedex-title img {
+  padding-right: 20px;
+}
+
+/* Region Filter Select */
+.title-region {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.title-region:focus {
+  outline: none;
+}
+
+/* Region Filter Options */
+.title-region option {
+  background-color: #21222c;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* Count View Pokemon Container */
+.count-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Count View Pokemon Element */
+.pokemon-draw-count {
+  display: flex;
+  width: 110px;
+  background-color: #1b2b76;
+  padding: 10px 15px 10px 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Count View Pokemon Icon */
+.pokemon-draw-count img {
+  margin-right: 15px;
+}
+
+/* Search Pokemon Input */
+.search-pokemon {
+  margin: 10px 40px 0 60px;
+}
+
+/*--------------------------------------------------------------
+# Main Elements
+--------------------------------------------------------------*/
+/* Main and Art Containers */
+.main-l-container,
+.main-r-container,
+.art-container {
+  display: flex;
+}
+
+/* Left Main Containers */
+.main-l-container {
+  flex: 6;
+}
+
+/* Right Main Containers */
+.main-r-container {
+  flex: 4;
+}
+
+/* Art Preview Container */
+.art-preview-container {
+  margin: 10%;
+  background-color: rgba(6, 38, 71, 0.3);
+  border-radius: 20px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Corner Images */
+.corner-images-left,
+.corner-images-right {
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+}
+
+/* Left Corner Image */
+.corner-images-left {
+  left: 0;
+  margin-left: 10px;
+}
+
+/* Right Corner Image */
+.corner-images-right {
+  right: 0;
+  margin-right: 10px;
+}
+
+/* Change Style to Bootstrap Button */
+.btn.btn-switch {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-switch:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.btn-switch:active {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Icon */
+.icon-switch {
+  color: white;
+}
+
+/* Pokemon Transition */
+.pokemon-img,
+.pokemon-name,
+.pokemon-types {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+/* Pokemon Transition Entrance */
+.loaded {
+  opacity: 1;
+}
+
+/* Pokemon Name */
+.pokemon-name {
+  font-size: xx-large;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/* Pokemon Art */
+.pokemon-img {
+  width: auto;
+  height: 70%;
+  max-width: 100%;
+  display: block;
+}
+
+/* List Container */
+.list-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.list-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* List Pokemon */
+ul {
+  margin-left: 20px;
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Li Element Size */
+.list-dex {
+  width: 37vw;
+}
+
+/* Li Button */
+.list-button {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.list-button:hover {
+  transform: scale(1.05);
+}
+
+.list-button:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem 0.2rem rgba(6, 38, 71, 0.5);
+}
+
+/* Li Button Text */
+.list-button p {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: x-large;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Li Button Sprite */
+.sprites {
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*--------------------------------------------------------------
+# Footer Elements
+--------------------------------------------------------------*/
+/* Text Footer */
+.text-end {
+  color: white;
+  margin-right: 10px;
+}

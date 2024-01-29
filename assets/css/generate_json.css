@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+/* General settings */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #21222c;
+  display: flex;
+  border-bottom: 3px solid #41424b;
+  height: 100px;
+  padding: 15px 0 0 20px;
+}
+
+main {
+  background-color: #1356aa;
+  border-top: 5px solid #ffff00;
+  border-bottom: 5px solid #ffff00;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  border-top: 3px solid #41424b;
+  background: #21222c;
+  height: 40px;
+}
+
+h1 {
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Main Elements
+--------------------------------------------------------------*/
+
+.donwload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* O ajusta la altura según tus necesidades */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-download {
+  font-size: 2em;
+  padding: 20px 40px;
+}
+
+/*--------------------------------------------------------------
+# Footer Elements
+--------------------------------------------------------------*/
+/* Text Footer */
+.text-end {
+  color: white;
+  margin-right: 10px;
+}
